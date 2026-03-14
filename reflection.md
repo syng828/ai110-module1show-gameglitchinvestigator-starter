@@ -5,15 +5,22 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+The game looked mostly fine, it had the information about guessing, input, and also different difficulties.
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
-
----
+- Hints were backward (ex. Asked to go higher when the actual number was lower, expected it to say lower)
+- The history update is late (After inputting a number the history adds the number before that and only goes up to number before last, should have all of them)
+- Attempts left is late (ex. Indicates 1 input left even when ended should be 0)
+- The current score goes to negative (Should stop at 0)
+- New game button doesn't work (should reset history and allow to input)
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+I am using Copilot.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
 ---
