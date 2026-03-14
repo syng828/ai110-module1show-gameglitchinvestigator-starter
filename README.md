@@ -25,13 +25,12 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+I used this project to fix a broken guessing game by identifying state and logic bugs. The game’s purpose is to guess a hidden number within a limited number of attempts while showing hints and tracking score. I found several concrete bugs: hints were reversed, the secret number changed on reruns, history lagged behind guesses, attempts-left was off by one, score could go negative, and new game didn’t fully reset.
+
+I fixed the game by moving logic into `logic_utils.py`, storing game variables in `st.session_state`, and only resetting state on New Game. I implemented correct hint logic, capped score at zero, and aligned attempt count and attempts-left with each guess. Then I added `pytest` tests for `check_guess`, `update_score`, attempt-left behavior, and game reset state.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
 
 ## 🚀 Stretch Features
 
