@@ -39,11 +39,15 @@ Yes, AI helped by quickly generating test cases and guiding where to add asserti
 
 ## 4. What did you learn about Streamlit and state?
 
+<<<<<<< HEAD
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit? 
   Streamlit reruns the whole script on each user action, like pressing a button or changing input. Session state stores values between reruns so the game can remember state such as the secret number and score. This prevents the app from resetting on every click and makes interactive behavior stable.
 
 - What change did you make that finally gave the game a stable secret number?
   I stored the secret number in `st.session_state` and only initialized it once when the key was missing. That ensured future reruns kept the same secret until the user clicked New Game, which then explicitly reset session state.
+=======
+- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+>>>>>>> 65c93e357d6e1a97f6329182b0ef76461058bb6b
 
 
 ## 5. Looking ahead: your developer habits
