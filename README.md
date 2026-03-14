@@ -30,7 +30,8 @@ I used this project to fix a broken guessing game by identifying state and logic
 I fixed the game by moving logic into `logic_utils.py`, storing game variables in `st.session_state`, and only resetting state on New Game. I implemented correct hint logic, capped score at zero, and aligned attempt count and attempts-left with each guess. Then I added `pytest` tests for `check_guess`, `update_score`, attempt-left behavior, and game reset state.
 
 ## 📸 Demo
-
+https://docs.google.com/document/d/1IMJzmRXpVC4y8-GWrbKDiuOWnmFcJwV6fFpAlXcaVHc/edit?usp=sharing
+(don't know why can't put image on readme) 
 
 ## 🚀 Stretch Features
 
